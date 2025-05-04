@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanisław Pruszek - CV</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .pdf-viewer {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+        .language-switcher {
+            position: fixed;
+            top: 120px;
+            right: 120px;
+            z-index: 1000;
+            display: flex;
+            gap: 20px;
+        }
+        .language-btn {
+            padding: 6px 12px;
+            background-color: rgba(74, 111, 165, 0.8);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 25px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .language-btn:hover {
+            background-color: rgba(58, 90, 143, 0.9);
+            transform: scale(1.05);
+        }
+        .language-btn.active {
+            background-color: rgba(44, 74, 122, 0.9);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <button class="language-btn active" onclick="switchLanguage('pl')">PL</button>
+        <button class="language-btn" onclick="switchLanguage('en')">EN</button>
+    </div>
+    
+    <iframe id="cv-frame" src="CV po PL.pdf" class="pdf-viewer"></iframe>
+
+    <script>
+        function switchLanguage(lang) {
+            const frame = document.getElementById('cv-frame');
+            const buttons = document.querySelectorAll('.language-btn');
+            
+            // Zmień źródło PDF
+            frame.src = lang === 'pl' ? "CV po PL.pdf" : "CV po ENG.pdf";
+            
+            // Aktualizuj styl przycisków
+            buttons.forEach(btn => {
+                btn.classList.toggle('active', 
+                    (lang === 'pl' && btn.textContent === 'PL') || 
+                    (lang === 'en' && btn.textContent === 'EN')
+                );
+            });
+        }
+    </script>
+</body>
+</html>

@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>AI & ML Courses Summary</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Space Mono', monospace;
       margin: 40px;
       background-color: #f9f9f9;
-      color: #333;
+      color: #3a41e4;
       line-height: 1.6;
     }
     h1, h2, h3 {
-      color: #004080;
+      font-family: 'League Spartan', sans-serif;
+      color: #3a41e4;
     }
     a {
-      color: #1a73e8;
+      color: #3a41e4;
       text-decoration: none;
+      text-decoration: underline;
     }
     a:hover {
-      text-decoration: underline;
+      color: #e67e22;
+
     }
     .section {
       background: #fff;
@@ -32,43 +37,113 @@
       margin: 0;
       padding-left: 20px;
     }
+
+    .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.header-text h1 {
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+  color: #3a41e4;
+}
+
+.header-image img {
+  max-height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
   </style>
 </head>
 <body>
 
-  <h1>AI & Machine Learning Education Summary</h1>
+ <div class="header-container">
+
+   <div class="header-text">
+    <h1>Finished courses summary&nbsp;&nbsp;</h1>
+  </div>
+
+<!--  <div class="header-image">-->
+<!--    <img src="portret.jpg" alt="My Photo">-->
+<!--  </div>-->
+</div>
 
   <div class="section">
     <h2>Andrew NG – Coursera</h2>
-    <h3>Machine Learning Specialization</h3>
+
     <p><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank">
-      Machine Learning Specialization (ML fundamentals)</a></p>
+      Machine Learning Specialization</a></p>
     <ul>
-      <li>Linear and logistic regression</li>
+      <li>Linear, logistic regression</li>
       <li>Neural networks and decision trees</li>
-      <li>Clustering, anomaly detection and reinforcement learning</li>
+      <li>Clustering, reinforcement learning</li>
     </ul>
 
-    <h3>Advanced Learning Algorithms</h3>
-    <p><a href="https://www.coursera.org/learn/advanced-learning-algorithms#modules" target="_blank">
-      Advanced Learning Algorithms (deeper dive into theory)</a></p>
+
+    <p><a href="https://www.coursera.org/learn/advanced-learning-algorithms" target="_blank">
+      Advanced Learning Algorithms</a></p>
     <ul>
       <li>Neural Networks</li>
       <li>Decision Trees</li>
     </ul>
-
-    <p><strong>Coming soon:</strong> <br>
-      <a href="https://www.coursera.org/specializations/deep-learning#courses" target="_blank">
-        Deep Learning Specialization</a>
-    </p>
   </div>
 
   <div class="section">
     <h2>Kaggle</h2>
-    <h3>Feature Engineering</h3>
+
     <p><a href="https://www.kaggle.com/learn/feature-engineering" target="_blank">
-      Kaggle Feature Engineering Course</a></p>
+     Feature Engineering Course</a></p>
+     <ul>
+       <li>Mutual information metric</li>
+       <li>Modifying and creating features</li>
+      <li>Clustering</li>
+    </ul>
   </div>
 
   <div class="section">
     <h2>Harvard CS50</h2>
+    <p><a href="https://cs50.harvard.edu/ai/2024/" target="_blank">
+     Introduction to Artificial Intelligence with Python</a></p>
+    <p>Completed 12 projects covering AI topics, including:</p>
+    <ul>
+  <li>Search algorithms (finding a way through a maze, mini-max for Tic-Tac-Toe)</li>
+  <li>Propositional logic and inference</li>
+  <li>Probability theory and Bayesian networks</li>
+  <li>Optimization and constraint satisfaction (e.g. filling empty crosswords)</li>
+  <li>Nearest-neighbor classifier (predicting whether a website visitor will buy a product)</li>
+  <li>Neural networks with convolutional layers (tensorflow, traffic sign recognition using GTSRB dataset)</li>
+  <li>Natural language processing with BERT (text completion)</li>
+</ul>
+
+  </div>
+
+<div class="section">
+    <h2>Udemy</h2>
+    <p><a href="https://www.udemy.com/course/100-days-of-code" target="_blank">
+     100 days of Code – Python course </a></p>
+    <p>The course consisted of several dozen exercises and more than a dozen independent projects.<br>A concise list of
+                                                                                                     topics is below.</p>
+<ul>
+    <li>Python data structures and object-oriented programming
+    <li>File handling (txt, CSV, JSON)</li>
+    <li>Working with APIs (REST, HTTP requests)</li>
+    <li>Web scraping (BeautifulSoup, Selenium)</li>
+    <li>GUI development (Tkinter, PyQt)</li>
+    <li>Data Science basics (pandas, numpy, matplotlib)</li>
+    <li>Database management (SQLite, SQLAlchemy)</li>
+    <li>Images processing (PIL)</li>
+    <li>Web development and deployment (Flask, Django)</li>
+ </ul>
+
+  </div>
+
+
+</body>
+</html>

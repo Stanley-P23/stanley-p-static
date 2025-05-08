@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI & ML Courses Summary</title>
+  <title>7 Selected Projects</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
   <style>
+  .main-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
     body {
       font-family: 'Space Mono', monospace;
       margin: 40px;
@@ -23,6 +28,10 @@
       text-decoration: underline;
     }
     a:hover {
+      color: #e67e22;
+
+    }
+    h5 {
       color: #e67e22;
 
     }
@@ -60,82 +69,144 @@
   border-radius: 12px;
   object-fit: cover;
 }
+
   </style>
 </head>
 <body>
-
+<div class="main-container">
  <div class="header-container">
 
    <div class="header-text">
-    <h1>Finished projects</h1>
+    <h1>7 Selected Projects</h1>
   </div>
 
 <!--  <div class="header-image">-->
 <!--    <img src="portret.jpg" alt="My Photo">-->
 <!--  </div>-->
 </div>
+    <div class="section">
+  <a href="https://www.kaggle.com/code/stanisawpruszek/titanic-challenge-solution" target="_blank"><h2>Spaceship Titanic
+       – Kaggle Competition</h2></a>
+
+
+
+<p><strong>Technologies:</strong> Sklearn, Xgboost, GridSearchCV</p>
+
+<p style="text-align: justify;">
+  My solution for Kaggle Spaceship Titanic challenge,
+  predicting passenger transport status (True/False) using feature engineering
+  and an optimized XGBoost model. By decomposing categorical features and handling missing values strategically,
+  the model achieved top 15% performance (80% accuracy).
+</p>
+
+  </div>
+
+
+
 
   <div class="section">
-      <a href="https://github.com/Stanley-P23/Traffic_Signs_Recognition" target="_blank"><h2>Traffic Signs Recognition</h2></a>
+  <a href="https://www.kaggle.com/code/stanisawpruszek/house-pricing-solution" target="_blank"><h2>House Prices Prediction – Kaggle Competition</h2></a>
 
+
+
+<p><strong>Technologies:</strong> Sklearn, Xgboost, Lightgbm, StackingCVRegressor</p>
+      <p style="text-align: justify;">
+      This project was developed for a Kaggle challenge focused on predicting house prices based on various property features.
+        I built a regression model using feature engineering and ensemble learning techniques.
+        The solution combines several machine learning models and was inspired by the approaches shared
+        by top participants in the competition. Final submission ranked within the top 1% results.
+ </p>
+  </div>
+
+      <div class="section">
+  <a href="https://github.com/Stanley-P23/Nim_reinforcement_learning" target="_blank"><h2>Learning game strategy with
+      Q-Learning</h2></a>
+
+
+
+<p><strong>Technologies:</strong> Manually implemented algorithm</p>
+ <p style="text-align: justify;">
+As part of Harvard's CS50 AI course,
+         I implemented a reinforcement learning agent that
+         learns to play the strategic game of Nim using the Q-learning algorithm.
+            The agent trains by playing thousands of games. It learns to choose optimal moves and can successfully
+         compete against a human player in real time.
+          </p>
+  </div>
+
+
+  <div class="section">
+  <a href="https://github.com/Stanley-P23/Watermark" target="_blank"><h2>Watermarker – Desktop App
+      in Python</h2></a>
+
+
+
+<p><strong>Technologies: Tkinter, PIL</strong></p>
+ <p style="text-align: justify;">
+Desktop application that allows users to add and edit watermarks on images.
+      The app supports resizing, transparency adjustment, drag-and-drop positioning, and tiling options like straight
+      or diagonal repeat. This project gave me hands-on experience with GUI design, image processing, and event-driven programming.
+ </p>
+  </div>
+
+
+
+  <div class="section">
+
+      <a href="https://github.com/Stanley-P23/Traffic_Signs_Recognition" target="_blank"><h2>Traffic Signs Recognition</h2></a>
+        <p><strong>Technologies: </strong>TensorFlow, Numpy</p>
+             <p style="text-align: justify;">
       This project implements a Convolutional Neural Network built with TensorFlow/Keras to recognize traffic signs from
       the GTSRB dataset.
       The model includes images scaling, batch normalization, and dropout layers to prevent overfitting.
       Achieved accuracy above 98% on a 40% test split.
-
-
-    <p><a href="https://www.coursera.org/learn/advanced-learning-algorithms" target="_blank">
+ </p>
 
   </div>
 
-  <div class="section">
-    <h2>Kaggle</h2>
-
-    <p><a href="https://www.kaggle.com/learn/feature-engineering" target="_blank">
-     Feature Engineering Course</a></p>
-     <ul>
-       <li>Mutual information metric</li>
-       <li>Modifying and creating features</li>
-      <li>Clustering</li>
-    </ul>
-  </div>
 
   <div class="section">
-    <h2>Harvard CS50</h2>
-    <p><a href="https://cs50.harvard.edu/ai/2024/" target="_blank">
-     Introduction to Artificial Intelligence with Python</a></p>
-    <p>Completed 12 projects covering AI topics, including:</p>
-    <ul>
-  <li>Search algorithms (finding a way through a maze, mini-max for Tic-Tac-Toe)</li>
-  <li>Propositional logic and inference</li>
-  <li>Probability theory and Bayesian networks</li>
-  <li>Optimization and constraint satisfaction (e.g. filling empty crosswords)</li>
-  <li>Nearest-neighbor classifier (predicting whether a website visitor will buy a product)</li>
-  <li>Neural networks with convolutional layers (tensorflow, traffic sign recognition using GTSRB dataset)</li>
-  <li>Natural language processing with BERT (text completion)</li>
+  <a href="https://github.com/Stanley-P23/matmatmat" target="_blank"><h2>Math Learning Web Platform</h2></a>
+
+  <a href="https://matmatmat.onrender.com" target="_blank"><h5>Link for demo  <span style="font-size: 0.75em; color: gray;">(wait, it's loading)</span></h5>
+</a>
+
+<p><strong>Technologies:</strong> Flask, SQLAlchemy, Bootstrap, Smtplib</p>
+      <p style="text-align: justify;">
+      I've created a website for my students to enable better communication, provide access to a knowledge base,
+      and track their progress through interactive tests.
+           </p>
+      <br>Some functionalities below.<br><br>
+<ul>
+  <li>Secure user registration and login system</li>
+  <li>Role-based access (teachers and students)</li>
+  <li>Teacher dashboard for creating and managing newsletter and tests</li>
+  <li>Automated test evaluation and detailed result statistics</li>
+  <li>Knowledge resources tab</li>
+  <li>Email notifications for new tests</li>
+  <li>Responsive and user-friendly interface using Bootstrap</li>
 </ul>
 
   </div>
 
-<div class="section">
-    <h2>Udemy</h2>
-    <p><a href="https://www.udemy.com/course/100-days-of-code" target="_blank">
-     100 days of Code – Python course </a></p>
-    <p>The course consisted of several dozen exercises and more than a dozen independent projects.<br>A concise list of
-                                                                                                     topics is below.</p>
-<ul>
-    <li>Python data structures and object-oriented programming
-    <li>File handling (txt, CSV, JSON)</li>
-    <li>Working with APIs (REST, HTTP requests)</li>
-    <li>Web scraping (BeautifulSoup, Selenium)</li>
-    <li>GUI development (Tkinter, PyQt)</li>
-    <li>Data Science basics (pandas, numpy, matplotlib)</li>
-    <li>Database management (SQLite, SQLAlchemy)</li>
-    <li>Images processing (PIL)</li>
-    <li>Web development and deployment (Flask, Django)</li>
- </ul>
+     <div class="section">
+  <a href="https://github.com/Stanley-P23/Bikey_weather" target="_blank"><h2>Bikey weather - SMS Alerts for
+      Cyclists</h2></a>
+
+
+<p><strong>Technologies:</strong> API, Twilio.rest</p>
+      <p style="text-align: justify;">
+      Python app that sends SMS notifications when the weather is ideal for a cycling trip. By fetching data from a weather API,
+          it checks if the upcoming weekend will have strong, steady winds and minimal chance of rain. If conditions are favorable,
+          it sends an SMS suggesting the best cycling direction (with the wind) and a recommended destination.
+           </p>
+
 
   </div>
+
+
+
+</div>
 
 
 </body>

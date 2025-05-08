@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stanisław Pruszek - CV</title>
     <style>
+
+
+
         body {
             margin: 0;
             padding: 0;
@@ -24,9 +27,11 @@
             display: flex;
             gap: 20px;
         }
+
         .language-btn {
+            font-family: 'Space Mono', monospace;
             padding: 6px 12px;
-            background-color: rgba(74, 111, 165, 0.8);
+            background-color: rgba(58, 65, 228, 0.9);
             color: white;
             border: none;
             border-radius: 4px;
@@ -35,13 +40,12 @@
             transition: all 0.3s;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+
+
+
         .language-btn:hover {
-            background-color: rgba(58, 90, 143, 0.9);
+            background-color: rgba(230, 126, 34, 0.9);
             transform: scale(1.05);
-        }
-        .language-btn.active {
-            background-color: rgba(44, 74, 122, 0.9);
-            font-weight: bold;
         }
 
         /* Style dla wersji mobilnej */
@@ -59,6 +63,8 @@
             display: flex;
             justify-content: center;
             gap: 30px;
+
+
         }
 
         @media (max-width: 1080px) {
@@ -72,6 +78,9 @@
                 display: block;
             }
         }
+
+
+
     </style>
 </head>
 <body>
@@ -80,16 +89,20 @@
         <button class="language-btn active" onclick="switchLanguage('pl')">PL</button>
         <button class="language-btn" onclick="switchLanguage('en')">EN</button>
     </div>
-    <iframe id="cv-frame" src="CV po PL.pdf" class="pdf-viewer"></iframe>
+    <iframe id="cv-frame" src="CV_PL.pdf" class="pdf-viewer"></iframe>
 
     <!-- Widok mobilny -->
     <div class="mobile-view">
-        <h1 class="mobile-title">Stanisław Pruszek - CV</h1>
+
+        <h1 class="mobile-title"
+            style="font-family: 'League Spartan', sans-serif; color: #3a41e4;" >Stanisław Pruszek - CV</h1>
+
         <div class="mobile-buttons">
             <button class="language-btn active" onclick="downloadCV('pl')">PL</button>
             <button class="language-btn" onclick="downloadCV('en')">EN</button>
         </div>
-    </div>
+               </div>
+
 
     <script>
         // Funkcja dla desktopów (zmiana iframe)
@@ -98,7 +111,7 @@
             const buttons = document.querySelectorAll('.language-btn');
 
             // Zmień źródło PDF
-            frame.src = lang === 'pl' ? "CV po PL.pdf" : "CV po ENG.pdf";
+            frame.src = lang === 'pl' ? "CV_PL.pdf" : "CV_ENG.pdf";
 
             // Aktualizuj styl przycisków
             buttons.forEach(btn => {
@@ -111,7 +124,7 @@
 
         // Funkcja dla mobile (pobieranie PDF)
         function downloadCV(lang) {
-            const filename = lang === 'pl' ? "CV po PL.pdf" : "CV po ENG.pdf";
+            const filename = lang === 'pl' ? "CV_PL.pdf" : "CV_ENG.pdf";
             const link = document.createElement('a');
             link.href = filename;
             link.download = filename;
